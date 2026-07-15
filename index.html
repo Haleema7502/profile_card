@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body{
+        background: linear-gradient(135deg, #d3a5d3,white, #9f5bd0d2);
+        font-family: sans-serif;
+      }
+      .container{
+        position: relative;
+        max-width: 400px;
+        background-color: white;
+        border: 2px solid rgb(247, 208, 246);
+        border-radius: 40px;
+        box-shadow: -3px 8px 8px #9f86b0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding: 40px 30px 20px 30px ;
+        overflow: hidden;
+        z-index:1;
+      }
+      
+      #welcome{
+
+        width:60% ;
+        border: 2px solid #aaa1c8;
+        border-radius: 20px;
+        background-color: #d5c6e0;
+        text-transform: uppercase;
+        color: #967aa1;
+        padding: 10px;
+        margin-top: 50px;
+      }
+      #welcome:hover{
+    
+        transform: scale(1.1);
+        background-color: #aaa1c8;
+        color: white;
+      }
+      .nav{
+       border: 3px solid #aaa1c8;
+       border-radius: 20px;
+       width: 99%;
+       height:130px;
+       margin-top: 40px;
+       background-color: rgb(247, 243, 248);
+       color: rgb(15, 13, 13);
+       box-shadow: 0px 5px 8px #d5c6e0;
+       
+      }
+      .nav h1{
+        font-family:'Times New Roman', Times, serif;
+        font-size: 40px;
+        margin-bottom: 7px;
+      }
+      .nav span{
+        color: rgb(20, 174, 20);
+        font-weight: bold;
+        
+      }
+      .info{
+        display: block;
+        border: 2px solid #d5c6e0;
+        background-color: #ede0f1;
+        color: #5a3b67;
+        box-shadow: 0px 2px 5px #e0d1eb ;
+        border-radius: 20px;
+        width: 99%;
+        margin-top: 20px;
+       
+        gap: 20px;
+      }
+     
+      .h{
+        display: inline-block;
+        font-family: serif;
+        font-size: 40px;
+        font-weight: bold;
+        width: 60px;
+        text-align: center;
+        border: 4px solid white;
+        background: linear-gradient(135deg,#eccaf9, #032574);
+        color: white;
+        box-shadow: 0px 3px 8px #dac2eb;
+        border-radius: 50%;
+        padding: 5px;
+        vertical-align: middle;
+        line-height: 60px;
+
+      }
+      .text {
+        display: inline-block;
+        width:70% ;
+        vertical-align: middle;
+        padding-left: 10px;
+        text-align: left;
+      }
+      .text h1{
+        margin-bottom: 5px ;
+      }
+      .text p{
+        margin-top: 5px;
+      }
+       .info:hover{
+        transform: scale(1.05);
+        background-color: #c4a6cf;
+        border: 2px solid #85768b;
+        color: #f2f0f4;
+      }
+      .cardSection{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        width: 100%;
+       padding-top: 20px;
+       padding-bottom: 20px;
+       
+      }
+      .student, .course, .campus, .status{
+         border: 2px solid #dcb7ea;
+         border-radius: 10px;
+         width:186px ;
+         height: 100px;
+         text-align: center;
+         padding-top: 12px;
+      }
+      .cardSection span {
+        font-size:10px;
+        color: gray;
+        font-weight: bold;
+      }
+      #icon{
+        font-size: 30px;
+        text-align: center;
+        padding-top: 10px;
+      }
+      b{
+        font-size: 16px;
+        font-weight: semi-bold;
+        color: #413047;
+      }
+      .student:hover{
+        transform: scale(1.08);
+        box-sizing: 0px 3px 5px #bbafc0 ;
+      }
+        .course:hover{
+        transform: scale(1.08);
+        box-sizing: 0px 3px 5px #bbafc0 ;
+      }
+        .campus:hover{
+        transform: scale(1.08);
+        box-sizing: 0px 3px 5px #bbafc0 ;
+      }
+        .status:hover{
+        transform: scale(1.08);
+        box-sizing: 0px 3px 5px #bbafc0 ;
+      }
+      .c1::before,.c2::after, .c3::before {
+             content: "";
+            position: absolute;
+            border-radius: 50%;
+            z-index: -1;
+
+      }
+      .c1::before {
+
+       width: 100px;
+
+       height: 100px;
+       top: -35px;
+       right: -30px;
+       left: auto;
+       background: linear-gradient(135deg, #8d3689, #f1b0c9);
+            
+      }
+
+      .c2::after {
+
+       width: 130px;
+       height: 130px;
+       bottom: -45px;
+       left: -45px;
+       background: linear-gradient(135deg, #19878f, #84a7f1);
+      }
+      .c3::before{
+       width: 150px;
+       height: 150px;
+       top: -20px;
+       right: -20px;
+       left: auto;
+       opacity: 40%;
+       background: linear-gradient(135deg, #8d3689, #f1b0c9);
+      }
+      .footer{
+       width: 100%;
+       border: 3px dashed rgb(189, 190, 143);
+       background-color: rgb(249, 247, 203);
+       border-radius: 50px;
+       z-index: 2;
+      }  
+      .footer p{
+       font-size: 15px;
+       margin: 5px ;
+        
+      } 
+    </style>
+</head>
+<body > 
+    <center>
+    <div class="container">
+
+      <div class="c1"></div> 
+      <div class="c2"></div> 
+      <div class="c3"></div>
+
+       <span id="welcome">✨Welcom to Saylani</span>
+      
+       <div class="nav">
+           <h1>Saylani</h1>
+           <span>EDUCATION ● SKILLS ● SUCCESS</span>
+       </div>
+       
+      
+       <div class="info" >
+           <span class="h">H</span> 
+          <div class="text">    
+            <h1>Haleema Zeb</h1>
+           <p>A bright and ambitious young mind eager to explore, 
+            innovate, and build a successful future.</p>
+         </div> 
+       </div>
+       
+       <div class="cardSection">
+
+         <div class="student">
+            <span id="icon" >👩🏻‍🎓</span> <br>
+            <span>STUDENT</span> <br>
+            <b>Haleema Zeb</b>
+         </div>
+
+         <div class="course">
+            <span id="icon">💻</span> <br>
+            <span>COURSE</span> <br>
+            <b>Web Development</b>
+         </div>
+      
+          <div class="campus">
+            <span id="icon">📍</span> <br> 
+            <span>CAMPUS</span> <br>
+            <b>Peshawar</b>
+          </div>
+
+          <div class="status">
+           <span id="icon">⭐</span> <br>
+           <span>STATUS</span> <br>
+           <b>Active</b>
+          </div>
+
+          
+ 
+       </div>
+         
+         
+
+       <div class="footer">
+         <p>Stay focused, stay positive, and believe that you can achieve anything ♥  </p>
+       </div>
+    </div></center>
+</body>
+</html>
